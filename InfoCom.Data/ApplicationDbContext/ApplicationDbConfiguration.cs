@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using InfoCom.Data.DefaultSeed;
-using InfoCom.Models;
+using InfoCom.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace InfoCom.Data.ApplicationDbContext
+namespace InfoCom.Data.InfoComDbContext
 {
     public class ApplicationDbConfiguration
     {

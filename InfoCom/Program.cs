@@ -1,4 +1,18 @@
+using InfoCom.Data.InfoComDbContext;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
+{
+    options.UseLazyLoadingProxies();
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationDbContext"));
+    if (builder.Environment.IsDevelopment())
+    {
+        options.EnableSensitiveDataLogging();
+    }
+
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InfoCom.Models;
+using InfoCom.Model;
 
 namespace InfoCom.Data.DefaultSeed
 {
-    public  class ScheduleSeed
+    public class ScheduleSeed
     {
         public static List<Schedule> DefaultScheduleSeed()
         {
@@ -18,8 +18,8 @@ namespace InfoCom.Data.DefaultSeed
                     Title = "DemoTitle",
                     Status = "BackLog",
                     Description = "I am Demo description",
-                    CreatedAt = DateTime.Now,
-                    DueDate = DateTime.Now,
+                    CreatedAt = new DateTime(2025, 2, 10, 12, 0, 0),
+                    DueDate =new DateTime(2025, 2, 10, 12, 0, 0),
             },
             new Schedule()
             {
@@ -27,8 +27,8 @@ namespace InfoCom.Data.DefaultSeed
                     Title = "DemoTitle2",
                     Status ="ToDO",
                     Description = "I am Demo description two",
-                    CreatedAt = DateTime.Now,
-                    DueDate = DateTime.Now,
+                    CreatedAt = new DateTime(2025, 2, 10, 12, 0, 0),
+                    DueDate = new DateTime(2025, 2, 10, 12, 0, 0),
             },
             new Schedule()
             {
@@ -36,8 +36,8 @@ namespace InfoCom.Data.DefaultSeed
                     Title = "DemoTiTle3",
                     Status = "InProgress",
                     Description = "I am Demo description three",
-                    CreatedAt = DateTime.Now,
-                    DueDate = DateTime.Now,
+                    CreatedAt = new DateTime(2025, 2, 10, 12, 0, 0),
+                    DueDate = new DateTime(2025, 2, 10, 12, 0, 0),
             },
             new Schedule()
             {
@@ -45,8 +45,8 @@ namespace InfoCom.Data.DefaultSeed
                     Title = "DemoTiTle4",
                     Status = "Reviewing",
                     Description = "I am Demo description four",
-                    CreatedAt = DateTime.Now,
-                    DueDate = DateTime.Now,
+                    CreatedAt = new DateTime(2025, 2, 10, 12, 0, 0),
+                    DueDate = new DateTime(2025, 2, 10, 12, 0, 0),
             },
             new Schedule()
             {
@@ -54,8 +54,8 @@ namespace InfoCom.Data.DefaultSeed
                     Title = "DemoTiTle5",
                     Status = "Revieving",
                     Description = "I am Demo description five",
-                    CreatedAt = DateTime.Now,
-                    DueDate = DateTime.Now,
+                    CreatedAt = new DateTime(2025, 2, 10, 12, 0, 0),
+                    DueDate = new DateTime(2025, 2, 10, 12, 0, 0),
             },
             new Schedule()
             {
@@ -63,8 +63,8 @@ namespace InfoCom.Data.DefaultSeed
                     Title = "DemoTiTle6",
                     Status = "QATesting",
                     Description = "I am Demo description six",
-                    CreatedAt = DateTime.Now,
-                    DueDate = DateTime.Now,
+                    CreatedAt = new DateTime(2025, 2, 10, 12, 0, 0),
+                    DueDate = new DateTime(2025, 2, 10, 12, 0, 0),
             },
             };
             return schedules;
