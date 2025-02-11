@@ -1,4 +1,5 @@
-﻿using InfoCom.Ui.Models.Models;
+﻿using InfoCom.MediatR.MediatRService.ScheduleService;
+using InfoCom.Ui.Models.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
